@@ -1,2 +1,3 @@
 # soldeluna
-Sol de Luna Massage Therapy Business Website
+Massage Therapy Business Website
+This Website was created for Sol de Luna Massage
