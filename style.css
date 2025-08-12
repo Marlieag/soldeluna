@@ -6,6 +6,11 @@
 body{
     margin: 0, auto;
 }
+.lato-light {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
 .hero-container {
     position: relative;
     background-image: url(images/heroimg.jpg);
@@ -23,11 +28,26 @@ body{
 }
 h1 {
     font-size: 64px !important;
-    text-align: center;
+    text-align: left;
     color: #ffffff !important;
     font-family: "Playfair Display", serif !important;
 }
+p.tagline{
+    font-size: 24px !important;
+    color: #ffffff !important;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    margin-top: 20px ;
+    text-align: left;
+}
 
+.btn-primary {
+    background-color: var(--third-color) !important;
+    color: rgb(0, 0, 0) !important;
+    padding: 15px 30px;
+    margin-top: 40px;
+
+}
 .hero-container::before {
     content: "";
     position: absolute;
@@ -41,4 +61,11 @@ h1 {
 .hero-container > * {
     position: relative;
     z-index: 3;
+}
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* aligns items to the left */
+    text-align: left;        /* aligns text to the left */
+    max-width: 900px;        /* optional: limits width for better appearance */
 }
