@@ -6,10 +6,38 @@
 body{
     margin: 0, auto;
 }
+.great-vibes-regular {
+  font-family: "Great Vibes", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.montserrat-regular {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.playfair-display-regular {
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-style: normal;
+}
 .lato-light {
   font-family: "Lato", sans-serif;
   font-weight: 300;
   font-style: normal;
+}
+.business-name {
+    font-family: "Great Vibes", cursive !important;
+    font-size: 30px;
+    color: var(--primary-color);
+    margin: 0;
+}
+.business-tagline {
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    font-weight: 200;
+    color: var(--primary-color);
+    margin: 0;
 }
 .hero-container {
     position: relative;
@@ -68,4 +96,13 @@ p.tagline{
     align-items: flex-start; /* aligns items to the left */
     text-align: left;        /* aligns text to the left */
     max-width: 900px;        /* optional: limits width for better appearance */
+}
+.navbar {
+    padding-top: 0.25rem !important;
+    padding-bottom: 0.25rem !important;
+}
+
+.navbar-brand img {
+    height: 40px; /* Adjust as needed for a thinner navbar */
+    width: auto;
 }
