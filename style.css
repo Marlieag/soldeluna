@@ -106,3 +106,9 @@ p.tagline{
     height: 40px; /* Adjust as needed for a thinner navbar */
     width: auto;
 }
+
+h2,h3 {
+    font-family: "Playfair Display", serif !important;
+    font-weight: 400;
+    color: var(--primary-color) !important;
+}
