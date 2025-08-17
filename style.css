@@ -107,8 +107,12 @@ p.tagline{
     width: auto;
 }
 
-h2,h3 {
+h2,h4 {
     font-family: "Playfair Display", serif !important;
     font-weight: 400;
     color: var(--primary-color) !important;
+}
+
+h2{
+    font-size: 40px !important;
 }
