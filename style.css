@@ -108,7 +108,7 @@ p.tagline{
     width: auto;
 }
 
-h2,h4 {
+h2,h3 {
     font-family: "Playfair Display", serif !important;
     font-weight: 400;
     color: var(--primary-color) !important;
@@ -121,4 +121,7 @@ h2{
 .bg-custom {
     background-color: var(--third-color) !important;
     padding: 50px 0;
+}
+ h3 i {
+    color: var(--accent-color) !important;
 }
