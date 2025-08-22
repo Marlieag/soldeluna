@@ -77,6 +77,10 @@ p.tagline{
     margin-top: 40px;
 
 }
+.btn-outline-dark{
+    margin-top: 40px;
+    
+}
 .hero-container::before {
     content: "";
     position: absolute;
@@ -125,6 +129,14 @@ h2{
  h3 i {
     color: var(--accent-color) !important;
 }
+  .cta-img {
+    height: 500px;        /* adjust to desired height */
+    object-fit: cover;    /* ensures images fill evenly without distortion */
+    width: 100%;
+  }
+  @media (min-width: 768px) {
+    .w-md-auto { width: auto !important; }
+  }
 .hours-day {
     font-family: "lato", sans-serif !important;
 }
