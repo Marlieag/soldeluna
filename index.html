@@ -26,15 +26,32 @@
         </span>
 
     </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
-        <a class="nav-link" href="#">Home</a>
-        <a class="nav-link" href="#">Services</a>
-        <a class="nav-link" href="#">Contact</a> 
-      </div>
+
+    <!-- Nav Links -->
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav align-items-lg-center">
+
+        <li class="nav-item">
+          <a class="nav-link" href="#services">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#testimonials">Testimonials</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+        <li>
+            <a class="nav-link" href="/giftcards">Gift Cards</a>
+        </li>
+        <li class="nav-item ms-lg-3">
+          <a class="btn btn-primary px-3 py-1" href="/book">
+            Book Now
+          </a>
+        </li>
+      </ul>
     </div>
   </div>
 </nav> 
@@ -49,7 +66,7 @@
         Offering intuitive massage therapy, including deep tissue, prenatal, and <br>
          relaxation-focused bodywork to ease pain, reduce stress, and restore balance.
     </p>
-    <button type="button" class="btn btn-primary">BOOK NOW</button>
+    <button type="button" class="btn btn-primary py-2 px-4 mt-5">BOOK NOW</button>
     </div>
     </div>
 </header>
@@ -163,7 +180,7 @@
 </section>
 
 <section class="container my-5 py-5">
-    <h2 class="mt-5 mb-3 text-center">
+    <h2 class="mt-5 mb-3 pb-3 text-center">
         Book Appointment or Purchase Gift Card
     </h2>
   <div class="row g-4 justify-content-center">
@@ -178,7 +195,7 @@
         <p class="card-text mb-3">
             Invest in yourself—book your appointment today.
         </p>
-        <a href="/book" class="btn btn-primary px-4 py-2">
+        <a href="/book" class="btn btn-primary px-4 py-2 mt-4">
           Book Now
         </a>
       </div>
@@ -192,7 +209,7 @@
         <p class="card-text mb-3">
             Invest in wellness, gift a massage today.
         </p>
-        <a href="/giftcards" class="btn btn-outline-dark px-4 py-2">
+        <a href="/giftcards" class="btn btn-outline-dark px-4 py-2 mt-4">
             Purchase Gift Card
         </a>
       </div>
@@ -200,7 +217,7 @@
   </div>
 </section>
 
-<section class="container my-5 py-4">
+<section class="container my-4 py-4 overflow-hidden">
         <h2 class="mt-5 mb-3 text-center">
             Testimonials
         </h2>
@@ -210,10 +227,7 @@
         <div class="row g-4">
         <div class="col-md-4">
            <article class="bg-custom p-3 h-100 text-white rounded-5 shadow-sm">
-            <h3 class="h5 client-name">
-                Julie Brim
-            </h3>
-             <div class="d-flex text-warning justify content-center pb-3">
+             <div class="d-flex text-warning justify content-center p-3 justify-content-center">
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
@@ -226,14 +240,14 @@
                listen to me and I had the best massage of my life! She was so much help and my "angel of mercy". 
                Thanks again, Arlene
             </p>
+            <p class=" text-center client-name">
+                —Julie B.
+            </p>
             </article>
         </div>
         <div class="col-md-4">
             <article class="bg-custom p-3 h-100 text-white rounded-5 shadow-sm">
-            <h3 class="h5 client-name">
-                Scot Highland
-            </h3>
-            <div class="d-flex text-warning justify content-center pb-3">
+            <div class="d-flex text-warning justify content-center p-3 justify-content-center">
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
@@ -246,14 +260,14 @@
                 about every muscle in my body, and I was genuinely impressed. I've had many massages through the VA, 
                 but I have to say that Arlene's expertise surpassed them all.
             </p>
+            <p class="text-center client-name">
+                —Scot H.
+            </p>
             </article>
         </div>
         <div class="col-md-4">
             <article class="bg-custom p-3 h-100 text-white rounded-5 shadow-sm">
-            <h3 class="h5 client-name">
-                Leslie Johnson
-            </h3>
-             <div class="d-flex text-warning justify content-center pb-3">
+             <div class="d-flex text-warning justify content-center p-3 justify-content-center">
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
@@ -264,34 +278,37 @@
               Arlene listened to the issues I had and took things in her own hands and completely restored my aching body. 
               One day later and I feel amazing. Going back next week for more. Highly recommend Arlene
             </p>
+             <p class="text-center client-name">
+                —Leslie J.
+             </p>
             <article>
         </div>
         </div>
 </section>
  
-<section class="container contact mt-5 pt-5">
+<section id="contact" class="container">
   <div class="row">
       <div class="col">
-      <img src="images/contactimg.jpg" class="img-fluid rounded-5 shadow-sm" alt="...">
+      <img src="images/contactimg.jpg" class="img-fluid rounded-4 shadow-sm" alt="...">
     </div>
       <div class="col border border-dark-subtle shadow rounded-5 p-4 d-flex justify-content-center">
         <div class="text-start" style="max-width: 400px; width: 100%;">
         <h2 class="text-center mb-4"> 
             Contact Us
         </h2>
-        <p class="text-center mb-4 fw-light">
+        <p class=" mb-4 fw-light">
         Have questions or ready to book? We’re just a call or email away.
         </p>
-        <h3 class="h5 contact-info">
-           <i class="fa-solid fa-location-dot"></i>  
+        <h3 class="h6 contact-info">
+           <i class="fa-solid fa-location-dot me-2"></i>  
            1110 38th Ace Suite BB, Greeley, CO
         </h3>
-         <h3 class="h5 contact-info">
-           <i class="fa-solid fa-envelope contact-icon"></i>
+         <h3 class="h6 contact-info">
+           <i class="fa-solid fa-envelope contact-icon me-2"></i>
             Soldeluna@gmail.com
         </h3>
-         <h3 class="h5 contact-info"> 
-          <i class="fa-solid fa-phone contact-icon"></i>  
+         <h3 class="h6 contact-info"> 
+          <i class="fa-solid fa-phone contact-icon me-2"></i>  
           970-576-4250
         </h3>
     </div>
@@ -299,7 +316,7 @@
   </section>
   <section class="container mt-3">
     <div class="row">
-      <div class="col border border-dark-subtle shadow rounded-5 p-4 d-flex justify-content-center">
+      <div class="col border border-dark-subtle shadow rounded-4 p-4 d-flex justify-content-center">
         <div class="text-start" style="max-width: 400px; width: 100%;">
         <h2 class="text-center mb-4">
             Hours of Operation
@@ -370,11 +387,46 @@
     </div>
     </div>
   </section>              
-<footer>
-    <p>
-        © 2023 Sol de Luna Massage. All rights reserved.
-    </p>
-    <p>
+    <footer class="bg-light text-center text-lg-start mt-5 border-top">
+  <div class="container py-4">
+
+    <!-- Top Row -->
+    <div class="row">
+
+      <!-- Brand -->
+      <div class="col-md-4 mb-3 mb-md-0">
+        <img src="images/soldeluna2.png" alt="Sol de Luna Logo" class="img-fluid mb-2">
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-md-4 mb-3 mb-md-0">
+        <h6 class="fw-bold">Quick Links</h6>
+        <ul class="list-unstyled">
+          <li><a href="#services" class="text-decoration-none text-muted">Services</a></li>
+          <li><a href="/book" class="text-decoration-none text-muted">Book Now</a></li>
+          <li><a href="/giftcards" class="text-decoration-none text-muted">Gift Cards</a></li>
+          <li><a href="#contact" class="text-decoration-none text-muted">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="col-md-4">
+        <h6 class="fw-bold">Contact</h6>
+        <p class="mb-1"><i class="fa-solid fa-phone me-2"></i> <a href="tel:9705764250" class="text-muted text-decoration-none">970-576-4250</a></p>
+        <p class="mb-1"><i class="fa-solid fa-envelope me-2"></i> <a href="mailto:soldeluna@gmail.com" class="text-muted text-decoration-none">soldeluna@gmail.com</a></p>
+        <p class="mb-0"><i class="fa-solid fa-location-dot me-2"></i> Greeley, CO</p>
+      </div>
+
+    </div>
+
+    <!-- Divider -->
+    <hr class="my-4">
+
+    <!-- Bottom -->
+    <div class="text-center text-muted small">
+      © 2025 Sol de Luna Massage. All rights reserved.
+    </div>
+  </div>
 </footer>
 </body>
 </html>

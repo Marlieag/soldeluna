@@ -73,13 +73,7 @@ p.tagline{
 .btn-primary {
     background-color: var(--accent-color) !important;
     color: rgb(0, 0, 0) !important;
-    padding: 15px 30px;
-    margin-top: 40px;
 
-}
-.btn-outline-dark{
-    margin-top: 40px;
-    
 }
 .hero-container::before {
     content: "";
@@ -127,7 +121,7 @@ h2{
     padding: 50px 0;
 }
  h3 i {
-    color: var(--accent-color) !important;
+    color: var(--third-color) !important;
 }
   .cta-img {
     height: 500px;        /* adjust to desired height */
@@ -137,11 +131,14 @@ h2{
   @media (min-width: 768px) {
     .w-md-auto { width: auto !important; }
   }
+#contact{;
+    padding-top: 140px;
+}
 .hours-day {
     font-family: "lato", sans-serif !important;
 }
 .contact-info i {
-    background: var(--primary-color);
+    background: var(--third-color);
     color:#ffffff !important;
     border-radius: 50%;
     padding: 0.5rem;
