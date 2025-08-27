@@ -7,6 +7,8 @@
 body{
     margin: 0, auto;
 }
+html { scroll-behavior: smooth; }
+
 .great-vibes-regular {
   font-family: "Great Vibes", cursive;
   font-weight: 400;
