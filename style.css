@@ -138,6 +138,20 @@ h2{
   @media (min-width: 768px) {
     .w-md-auto { width: auto !important; }
   }
+
+/* space icons in accordion headers */
+#services-accordion .accordion-button i { margin-right: .5rem; }
+/* match your card tone */
+#services-accordion .accordion-item { border-color: rgba(0,0,0,.06); }
+@media (max-width: 767.98px){
+  #services-grid { display: none !important; }
+  #services-accordion { display: block !important; }
+}
+@media (min-width: 768px){
+  #services-accordion { display: none !important; }
+  #services-grid { display: block !important; }
+}
+
 #contact{ 
     padding-top: 140px;
 }
