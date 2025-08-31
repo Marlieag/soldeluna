@@ -60,7 +60,7 @@ html { scroll-behavior: smooth; }
     max-width: 900px;        
 }
 .hero-container h1 {
-    font-size: 40px;
+    font-size: 48px;
     text-align: left;
     color: #fff;
     font-family: "Playfair Display", serif;
@@ -221,7 +221,7 @@ h2{font-size: 40px;}
     align-items: flex-start; 
 }
   .hero-container h1 { 
-    font-size: 32px; 
+    
     line-height: 1.15; 
 }
   .hero-container .tagline { 
@@ -327,9 +327,21 @@ h2{font-size: 40px;}
 }
 /* Scale the logo down a touch on mobile */
 @media (max-width: 575.98px) {
-  .logo-col img { max-width: 200px !important; }
-  .hours-col { text-align: left; }  /* keep copy readable */
   footer .container { padding-left: 16px; padding-right: 16px; }
+  .hours-col{ text-align:center; }
+  .hours-col .row{
+    display:grid;
+    grid-template-columns: 70px 1fr; /* day | time */
+    gap:4px 12px; margin:2px 0;
+  }
+  .hours-col .days{ font-weight:600; text-align:right; }
+  .hours-col .hours{ white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+  .logo-col img{ max-width:180px !important; display:block; margin:10px auto 0; }
+}
+.links-col ul{ display:flex; flex-wrap:wrap; gap:8px 16px; padding:0; margin:0; list-style:none; }
+.links-col li{ margin:0; }
+.links-col a{ display:inline-block; white-space:nowrap; padding:6px 4px; font-size:16px; color:#6c757d; text-decoration:none; }
+.links-col a:hover{ color:var(--primary-color); text-decoration:underline; 
 }
 
 
@@ -341,34 +353,29 @@ h2{font-size: 40px;}
     border-radius: 12px; 
 }
 
-  /* Make hours a simple 2-column grid so lines up perfectly */
-  .hours-col {text-align: center;}
-  .hours-col .row { 
-    display: grid; 
-    grid-template-columns: 98px 1fr; 
-    justify-content: center;
-    align-items: start; 
-    gap: 4px 12px;
-    margin: 2px 0;
+  .hours-col{ text-align:center; }
+  .hours-col .row{
+    display:grid;
+    grid-template-columns: 90px 1fr;  /* day | time */
+    justify-content:center;
+    align-items:start;
+    gap:4px 12px;
+    margin:2px 0;
+  }
+  .hours-col .days{ font-weight:600; text-align:right; }
+  .hours-col .hours{ font-weight:300; text-align:left; }
+
+  /* Logo sits below, scaled and centered */
+  .logo-col img{
+    max-width: 180px !important;
+    display:block;
+    margin:8px auto 0;
+  }
 }
-  .hours-col .days { 
-    font-weight: 600;
-    text-align: right; 
-}
-  .hours-col .hours { 
-    font-weight: 300; 
-    text-align: left;
-}
-.hours-col h3.fs-6{
-    text-align: center;
+@media (min-width: 768px) and (max-width: 991.98px){
+  .logo-col img{ max-width: 240px !important; }
 }
 
-.logo-col img{
-    max-width: 100px !important;
-    display: block;
-    margin: 8px auto 0;
-}
-}
 /* Footer polish */
 footer a { 
     color: #6c757d; 
