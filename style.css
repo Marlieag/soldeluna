@@ -86,7 +86,18 @@ html { scroll-behavior: smooth; }
     
 }
 
+a i{
+  color: #FFC007 !important;
+}
+.btn-outline-dark{
+    box-shadow: 0 3px 12px rgba(94,99,182,.25);
+  transition: all .2s ease;
 
+}
+.btn-outline-dark:hover {
+  background-color: var(--secondary-color)!important;
+  color: #fff;
+}
 
 
 
